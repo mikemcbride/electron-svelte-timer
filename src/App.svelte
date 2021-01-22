@@ -7,7 +7,7 @@
     $: msDisplay = (parseInt(ms % 1000) / 10).toString().padStart(2, '0')
     $: seconds = parseInt((ms / 1000) % 60)
     $: minutes = parseInt((ms / 60000) % 60)
-    $: hours = parseInt((ms / 360000) % 24)
+    $: hours = parseInt((ms / 3600000) % 24)
 
     function handleStartStop() {
         if (!isRunning) {
